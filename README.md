@@ -80,11 +80,11 @@ Include headers and body as needed. The Load Balancer will automatically determi
 5. **Load Balancing Strategies**
 The system currently supports multiple load balancing strategies:
 
-### Round Robin: 
+  ***Round Robin***: 
    Distributes requests sequentially across all servers.
-### Choice-of-2: 
+  ***Choice-of-2***: 
    Selects the least loaded server from two randomly chosen servers.
-### Custom Strategies: 
+  ***Custom Strategies***: 
    Implement the LoadBalancingStrategy interface to define your own strategy.
 
 6. **Endpoints**
