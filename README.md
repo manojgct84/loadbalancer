@@ -79,6 +79,7 @@ Include headers and body as needed. The Load Balancer will automatically determi
 
 5. **Load Balancing Strategies**
 The system currently supports multiple load balancing strategies:
+
   ***Round Robin***: 
      Distributes requests sequentially across all servers.
  
