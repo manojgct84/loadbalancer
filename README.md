@@ -62,6 +62,40 @@ loadbalancer.healthcheck.interval=5000
 mvn spring-boot:run
 ```
 
+4. **Usage**
+Forwarding Requests
+Use Postman or any HTTP client to send requests to the Load Balancer.
+The Load Balancer will forward requests to one of the healthy backend servers based on the configured load balancing strategy.
+Example API Calls:
+Forward Standard Request:
+
+http
+POST http://localhost:8092/forwardRequest/getValue
+Forward Multipart File Request:
+
+http
+POST http://localhost:8092/forwardRequest/uploadFile
+Include headers and body as needed. The Load Balancer will automatically determine how to handle the request based on content type.
+
+5. **Load Balancing Strategies**
+The system currently supports multiple load balancing strategies:
+
+Round Robin: Distributes requests sequentially across all servers.
+Choice-of-2: Selects the least loaded server from two randomly chosen servers.
+Custom Strategies: Implement the LoadBalancingStrategy interface to define your own strategy.
+6. **Endpoints**
+ ```/forwardRequest/{path}``` : Forwards requests to the appropriate backend server based on 
+   the 
+   configured strategy.
+```/health```: (Optional) Endpoint to check the health status of the Load Balancer itself.
+Health Checks
+The Load Balancer periodically checks the health of all configured servers using the ```performHealthChecks()``` method. Servers that fail the health check are removed from the list of healthy servers, and those that pass are added back if previously removed.
+
+7. **Configuration of Health Checks**:
+The interval for health checks is set via the loadbalancer.healthcheck.interval property.
+Error Handling
+If no servers are available, the Load Balancer responds with a 503 Service Unavailable status.
+Errors during request forwarding are logged and responded to with appropriate HTTP status codes.
 
 ### Summary
 
