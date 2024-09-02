@@ -1,4 +1,4 @@
-package com.ariba.sap.loadbalancer.service;
+package com.simple.loadbalancer.service;
 
 import java.util.HashMap;
 import java.util.List;

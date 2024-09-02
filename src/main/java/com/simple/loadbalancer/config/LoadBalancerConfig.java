@@ -1,14 +1,13 @@
-package com.ariba.sap.loadbalancer.config;
+package com.simple.loadbalancer.config;
 
-import com.ariba.sap.loadbalancer.service.LeastConnectionsStrategy;
-import com.ariba.sap.loadbalancer.service.LoadBalancingStrategy;
-import com.ariba.sap.loadbalancer.service.NetflixChoiceOfTwoStrategy;
-import com.ariba.sap.loadbalancer.service.RandomStrategy;
-import com.ariba.sap.loadbalancer.service.RoundRobinStrategy;
-import com.ariba.sap.loadbalancer.status.ServerLoadChecker;
+import com.simple.loadbalancer.service.LeastConnectionsStrategy;
+import com.simple.loadbalancer.service.LoadBalancingStrategy;
+import com.simple.loadbalancer.service.NetflixChoiceOfTwoStrategy;
+import com.simple.loadbalancer.service.RandomStrategy;
+import com.simple.loadbalancer.service.RoundRobinStrategy;
+import com.simple.loadbalancer.status.ServerLoadChecker;
 
 import java.util.HashMap;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

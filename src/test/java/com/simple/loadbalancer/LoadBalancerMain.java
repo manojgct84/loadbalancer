@@ -1,4 +1,4 @@
-package com.ariba.sap.loadbalancer;
+package com.simple.loadbalancer;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

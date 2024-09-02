@@ -1,6 +1,6 @@
-package com.ariba.sap.loadbalancer.controller;
+package com.simple.loadbalancer.controller;
 
-import com.ariba.sap.loadbalancer.service.LoadBalancerService;
+import com.simple.loadbalancer.service.LoadBalancerService;
 
 import java.io.IOException;
 import java.util.Collections;

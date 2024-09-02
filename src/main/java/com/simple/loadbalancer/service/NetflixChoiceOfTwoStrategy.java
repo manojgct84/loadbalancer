@@ -1,6 +1,6 @@
-package com.ariba.sap.loadbalancer.service;
+package com.simple.loadbalancer.service;
 
-import com.ariba.sap.loadbalancer.status.ServerLoadChecker;
+import com.simple.loadbalancer.status.ServerLoadChecker;
 
 import java.util.List;
 

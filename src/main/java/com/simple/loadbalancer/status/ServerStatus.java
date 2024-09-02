@@ -1,4 +1,4 @@
-package com.ariba.sap.loadbalancer.status;
+package com.simple.loadbalancer.status;
 
 import java.time.LocalDateTime;
 
