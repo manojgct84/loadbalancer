@@ -67,14 +67,14 @@ Forwarding Requests
 Use Postman or any HTTP client to send requests to the Load Balancer.
 The Load Balancer will forward requests to one of the healthy backend servers based on the configured load balancing strategy.
 Example API Calls:
-Forward Standard Request:
+```properties
+ # Forward Standard Request:
+http POST http://localhost:8092/forwardRequest/getValue
 
-http
-POST http://localhost:8092/forwardRequest/getValue
-Forward Multipart File Request:
+# Forward Multipart File Request:
+http POST http://localhost:8092/forwardRequest/uploadFil
+```
 
-http
-POST http://localhost:8092/forwardRequest/uploadFile
 Include headers and body as needed. The Load Balancer will automatically determine how to handle the request based on content type.
 
 5. **Load Balancing Strategies**
